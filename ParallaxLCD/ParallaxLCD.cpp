@@ -8,7 +8,12 @@
 #include "ParallaxLCD.h"
 
 /**
- * Constructor.
+ * Constructor. Note that you need to not only include the 
+ * Parallax.h file in your sketch, but also SoftwareSerial.h. 
+ * This is because the Arduino IDE does not look at the library 
+ * code to determine what files to copy to the build directory. 
+ * It only looks at the sketch. If you have compile errors about 
+ * SoftwareSerial being undefined, check your includes. 
  * 
  * @author nedwidek (2012/07/01)
  * 
